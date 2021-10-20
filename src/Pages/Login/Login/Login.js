@@ -5,6 +5,7 @@ import './Login.css';
 
 const Login = () => {
     const {signInUsingGoogle} = useAuth();
+    
     return (
         <div>
             <h2 className="log-in">Please Login</h2>

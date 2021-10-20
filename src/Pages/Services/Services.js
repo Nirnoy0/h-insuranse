@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Service from '../Service/Service';
 import './Services.css';
 
@@ -9,6 +10,7 @@ const Services = () => {
             .then(res => res.json())
             .then(data => setServices(data));
     } , [])
+    
     return (
         <div className="container">
             <h1 className="text-center p-5">Our Services</h1>
