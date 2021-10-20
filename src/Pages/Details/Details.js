@@ -4,10 +4,9 @@ import { useParams } from 'react-router';
 const Details = () => {
     const {serviceId} = useParams();
     return (
-        <div>
+        <div className="container">
             <h2>Deatils of: </h2>
             <p>{serviceId}</p>
-            <p>{Details}</p>
         </div>
     );
 };

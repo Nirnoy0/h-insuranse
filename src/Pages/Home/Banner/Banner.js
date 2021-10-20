@@ -9,8 +9,8 @@ const Banner = () => {
         <div className="mt-2 mb-2">
             <Carousel>
             <Carousel.Item>
-                <img
-                className="d-block w-100"
+                <img                
+                className="d-block w-100 img-fluid"
                 src={img1}
                 alt="First slide"
                 />

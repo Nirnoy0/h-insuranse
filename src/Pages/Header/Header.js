@@ -7,7 +7,7 @@ import './Header.css';
 const Header = () => {
     const {user, logOut} = useAuth();
     return (
-        <div>
+        <div className="">
             <Navbar bg="dark" variant="dark" sticky="top">
               
               <Container>
@@ -16,6 +16,8 @@ const Header = () => {
                 <h2>H-Insurance</h2>
               </Navbar.Brand>
               
+              <Navbar.Toggle/>
+              <Navbar.Collapse>
               <Nav className="me-auto">
                 
                 <Nav.Link as={Link}
@@ -61,8 +63,7 @@ const Header = () => {
               <Navbar.Text>
                   Signed in as: <a href="#login">{user?.displayName}{user?.img}</a>
               </Navbar.Text>  
-                  
-              
+              </Navbar.Collapse>
               </Container>
             
             </Navbar>
