@@ -1,0 +1,12 @@
+.cards{
+    width: 18rem;
+    border: white solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+    background-image: linear-gradient(rgb(165, 164, 164), lightgray, white);
+    margin-top: 20px;
+    font-weight: 700;
+}
+.cards:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}

@@ -1,0 +1,22 @@
+div{
+    text-align: center;
+}
+.log-in{
+    padding: 30px;
+    color: cornflowerblue;
+}
+.btn{
+    background-color: goldenrod;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.input{
+    border-radius: 5px;
+    margin: 5px;
+}
+.register{
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 5px;
+}
