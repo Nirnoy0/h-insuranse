@@ -9,13 +9,15 @@ const PrivateRoute = ({ children, ...rest}) => {
         return <Spinner animation="border" variant="danger" />
     }
     return (
-        <div>
+        
             <Route
             {...rest}
-            render={({ location }) => user.email ? children : <Redirect
-            to={{
-                pathname: "/login",
-                state: { from: location }
+            render={({ location }) => user.email ? 
+            children : 
+            <Redirect
+                to={{
+                    pathname: '/login',
+                    state: { from: location }
             }}
             >
             </Redirect>
@@ -23,7 +25,7 @@ const PrivateRoute = ({ children, ...rest}) => {
             >
             </Route>
             
-        </div>
+        
     );
 };
 

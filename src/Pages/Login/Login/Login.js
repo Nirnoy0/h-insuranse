@@ -6,10 +6,12 @@ import './Login.css';
 const Login = () => {
     const {signInUsingGoogle} = useAuth();
     
+    const {createUserWithEmailAndPassword} = useAuth();
+
     return (
         <div>
             <h2 className="log-in">Please Login</h2>
-            <form>
+            <form onClick={createUserWithEmailAndPassword}>
                 <input type="email" placeholder="email" className="input"/>
                 <br />
                 <input type="password" placeholder="password" className="input"/>
